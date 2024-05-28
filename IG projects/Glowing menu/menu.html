@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <ul class="menu">
+        <div class="menutoggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0; --clr: #ff2972;">
+            <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+        </li>
+        <li style="--i:1; --clr: #fbff00;">
+            <a href="#"><ion-icon name="play-circle-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2; --clr: #00ff0d;">
+            <a href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3; --clr: #ea00ff;">
+            <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+        </li>
+        <li style="--i:4; --clr: #00fffb;">
+            <a href="#"><ion-icon name="chatbox-ellipses-outline"></ion-icon></a>
+        </li>
+        <li style="--i:5; --clr: #ffdd00;">
+            <a href="#"><ion-icon name="compass-outline"></ion-icon></a>
+        </li>
+        <li style="--i:6; --clr: #a629ff;">
+            <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+        </li>
+        <li style="--i:7; --clr: #b8ff29;">
+            <a href="#"><ion-icon name="cog-outline"></ion-i con></a>
+        </li>
+    </ul>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let menutoggle = document.querySelector('.menutoggle');
+        let menu = document.querySelector('.menu');
+        menutoggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</body>
+</html>
